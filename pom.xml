@@ -22,6 +22,21 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+
+    </dependencies>
+
 
     <dependencyManagement>
         <dependencies>
@@ -43,6 +58,9 @@
         <module>config</module>
         <module>gateway</module>
         <module>service</module>
+        <module>auth-service</module>
+        <module>common</module>
+        <module>system</module>
     </modules>
 
 

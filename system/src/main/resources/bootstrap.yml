@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: system
+  cloud:
+    config:
+      uri: http://config:8888
+      fail-fast: true
+      password: lxj3889
+      username: user

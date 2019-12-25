@@ -2,11 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="system" />
         <module name="gateway" />
+        <module name="common" />
         <module name="business" />
         <module name="auth" />
         <module name="registry" />
@@ -14,15 +17,21 @@
         <module name="config" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="auth" options="-parameters" />
+      <module name="auth-service" options="-parameters" />
       <module name="business" options="-parameters" />
+      <module name="common" options="-parameters" />
       <module name="config" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="registry" options="-parameters" />
       <module name="service" options="-parameters" />
+      <module name="system" options="-parameters" />
     </option>
   </component>
 </project>
