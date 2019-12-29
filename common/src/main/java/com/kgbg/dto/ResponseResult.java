@@ -117,49 +117,41 @@ public class ResponseResult<T> implements Serializable {
 
     /**
      * 通用状态码
-     * <p>
-     * Description:
-     * </p>
-     *
-     * @author Lusifer
-     * @version v1.0.0
-     * @date 2019-07-30 05:02:49
-
      */
     public class CodeStatus {
         /**
          * 请求成功
          */
-        public static final int OK = 20000;
+        public static final int OK = 200;
 
         /**
          * 请求失败
          */
-        public static final int FAIL = 20002;
+        public static final int FAIL = 202;
 
         /**
          * 熔断请求
          */
-        public static final int BREAKING = 20004;
+        public static final int BREAKING = 204;
 
         /**
          * 非法请求
          */
-        public static final int ILLEGAL_REQUEST = 50000;
+        public static final int ILLEGAL_REQUEST = 500;
 
         /**
          * 非法令牌
          */
-        public static final int ILLEGAL_TOKEN = 50008;
+        public static final int ILLEGAL_TOKEN = 508;
 
         /**
          * 其他客户登录
          */
-        public static final int OTHER_CLIENTS_LOGGED_IN = 50012;
+        public static final int OTHER_CLIENTS_LOGGED_IN = 512;
 
         /**
          * 令牌已过期
          */
-        public static final int TOKEN_EXPIRED = 50014;
+        public static final int TOKEN_EXPIRED = 514;
     }
 }

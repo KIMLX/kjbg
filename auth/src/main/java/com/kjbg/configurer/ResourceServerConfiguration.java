@@ -28,10 +28,11 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
                 // 匹配查询权限
                 .antMatchers("/oauth/**").permitAll()
                 .antMatchers("/uaa/oauth/**").permitAll()
-                .antMatchers("/user/login").permitAll()
+                .antMatchers("/system/login/**").permitAll()
+                .antMatchers("/login/**").permitAll()
                 .anyRequest().authenticated();
-        for (PermissionPojo permissionPojo : allPermission) {
-            http.authorizeRequests().antMatchers(permissionPojo.getUrl()).hasAnyAuthority(permissionPojo.getEname());
-        }
+//        for (PermissionPojo permissionPojo : allPermission) {
+//            http.authorizeRequests().antMatchers(permissionPojo.getUrl()).hasAnyAuthority(permissionPojo.getEname());
+//        }
     }
 }

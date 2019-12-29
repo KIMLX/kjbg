@@ -11,5 +11,5 @@ spring:
       password: lxj3889
 
 server:
-  port: 8888
+  port: 9099
 

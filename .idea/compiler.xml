@@ -7,18 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="system" />
         <module name="gateway" />
+        <module name="auth" />
         <module name="common" />
         <module name="business" />
-        <module name="auth" />
+        <module name="system" />
         <module name="registry" />
-        <module name="service" />
         <module name="config" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="auth-service" target="1.8" />
+      <module name="service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
